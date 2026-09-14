@@ -208,16 +208,14 @@ function AddAssignmentForm({
   return (
     <form
       onSubmit={handleSubmit}
-      className={`mt-4 rounded-2xl border p-5 shadow-lg ${
-        darkMode
+      className={`mt-4 rounded-2xl border p-5 shadow-lg ${darkMode
           ? "border-gray-700 bg-gray-900 shadow-black/20"
           : "border-gray-300 bg-gray-200 shadow-gray-400/30"
-      }`}
+        }`}
     >
       <h2
-        className={`mb-4 text-xl font-bold ${
-          darkMode ? "text-white" : "text-gray-900"
-        }`}
+        className={`mb-4 text-xl font-bold ${darkMode ? "text-white" : "text-gray-900"
+          }`}
       >
         New Assignment
       </h2>
@@ -228,11 +226,10 @@ function AddAssignmentForm({
           placeholder="Assignment name"
           value={title}
           onChange={(event) => setTitle(event.target.value)}
-          className={`rounded-xl border p-3 text-sm outline-none ${
-            darkMode
+          className={`rounded-xl border p-3 text-sm outline-none ${darkMode
               ? "border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:border-gray-500"
               : "border-gray-300 bg-gray-100 text-gray-900 placeholder-gray-500 focus:border-gray-500"
-          }`}
+            }`}
         />
 
         <input
@@ -240,22 +237,20 @@ function AddAssignmentForm({
           placeholder="Class"
           value={className}
           onChange={(event) => setClassName(event.target.value)}
-          className={`rounded-xl border p-3 text-sm outline-none ${
-            darkMode
+          className={`rounded-xl border p-3 text-sm outline-none ${darkMode
               ? "border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:border-gray-500"
               : "border-gray-300 bg-gray-100 text-gray-900 placeholder-gray-500 focus:border-gray-500"
-          }`}
+            }`}
         />
 
         <input
           type="date"
           value={dueDate}
           onChange={(event) => setDueDate(event.target.value)}
-          className={`rounded-xl border p-3 text-sm outline-none ${
-            darkMode
+          className={`rounded-xl border p-3 text-sm outline-none ${darkMode
               ? "border-gray-700 bg-gray-800 text-white focus:border-gray-500"
               : "border-gray-300 bg-gray-100 text-gray-900 focus:border-gray-500"
-          }`}
+            }`}
         />
 
         <input
@@ -266,11 +261,10 @@ function AddAssignmentForm({
           onChange={(event) =>
             setEstimatedMinutes(event.target.value)
           }
-          className={`rounded-xl border p-3 text-sm outline-none ${
-            darkMode
+          className={`rounded-xl border p-3 text-sm outline-none ${darkMode
               ? "border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:border-gray-500"
               : "border-gray-300 bg-gray-100 text-gray-900 placeholder-gray-500 focus:border-gray-500"
-          }`}
+            }`}
         />
 
         <select
@@ -280,11 +274,10 @@ function AddAssignmentForm({
               event.target.value as "Easy" | "Medium" | "Hard"
             )
           }
-          className={`rounded-xl border p-3 text-sm outline-none ${
-            darkMode
+          className={`rounded-xl border p-3 text-sm outline-none ${darkMode
               ? "border-gray-700 bg-gray-800 text-white focus:border-gray-500"
               : "border-gray-300 bg-gray-100 text-gray-900 focus:border-gray-500"
-          }`}
+            }`}
         >
           <option value="Easy">Easy</option>
           <option value="Medium">Medium</option>
@@ -294,11 +287,10 @@ function AddAssignmentForm({
 
       <button
         type="submit"
-        className={`mt-4 rounded-xl px-4 py-2.5 text-sm font-semibold ${
-          darkMode
+        className={`mt-4 rounded-xl px-4 py-2.5 text-sm font-semibold ${darkMode
             ? "bg-white text-gray-900 hover:bg-gray-200"
             : "bg-gray-900 text-white shadow-md shadow-gray-400/40 hover:bg-gray-800"
-        }`}
+          }`}
       >
         Add Assignment
       </button>
@@ -348,25 +340,22 @@ function EditAssignmentForm({
     });
   }
 
-  const inputClass = `rounded-xl border p-3 text-sm outline-none ${
-    darkMode
+  const inputClass = `rounded-xl border p-3 text-sm outline-none ${darkMode
       ? "border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:border-gray-500"
       : "border-gray-300 bg-gray-100 text-gray-900 placeholder-gray-500 focus:border-gray-500"
-  }`;
+    }`;
 
   return (
     <form
       onSubmit={handleSubmit}
-      className={`mt-4 rounded-2xl border p-5 ${
-        darkMode
+      className={`mt-4 rounded-2xl border p-5 ${darkMode
           ? "border-gray-700 bg-gray-900"
           : "border-gray-300 bg-gray-100"
-      }`}
+        }`}
     >
       <h3
-        className={`mb-4 text-lg font-bold ${
-          darkMode ? "text-white" : "text-gray-900"
-        }`}
+        className={`mb-4 text-lg font-bold ${darkMode ? "text-white" : "text-gray-900"
+          }`}
       >
         Edit Assignment
       </h3>
@@ -424,11 +413,10 @@ function EditAssignmentForm({
       <div className="mt-4 flex gap-2">
         <button
           type="submit"
-          className={`rounded-xl px-4 py-2 text-sm font-semibold ${
-            darkMode
+          className={`rounded-xl px-4 py-2 text-sm font-semibold ${darkMode
               ? "bg-white text-gray-900 hover:bg-gray-200"
               : "bg-gray-900 text-white hover:bg-gray-800"
-          }`}
+            }`}
         >
           Save Changes
         </button>
@@ -436,11 +424,10 @@ function EditAssignmentForm({
         <button
           type="button"
           onClick={onCancel}
-          className={`rounded-xl border px-4 py-2 text-sm font-semibold ${
-            darkMode
+          className={`rounded-xl border px-4 py-2 text-sm font-semibold ${darkMode
               ? "border-gray-700 bg-gray-800 text-gray-300 hover:bg-gray-700"
               : "border-gray-300 bg-gray-200 text-gray-700 hover:bg-gray-300"
-          }`}
+            }`}
         >
           Cancel
         </button>
@@ -639,9 +626,8 @@ function Dashboard({
 
   return (
     <section
-      className={`min-h-screen w-full p-6 ${
-        darkMode ? "bg-gray-950" : "bg-gray-100"
-      }`}
+      className={`min-h-screen w-full p-6 ${darkMode ? "bg-gray-950" : "bg-gray-100"
+        }`}
     >
       <style jsx>{`
         .snap-card {
@@ -679,38 +665,34 @@ function Dashboard({
             ? "Switch to light mode"
             : "Switch to dark mode"
         }
-        className={`mb-5 flex h-10 w-10 items-center justify-center rounded-full border text-base shadow-md ${
-          darkMode
+        className={`mb-5 flex h-10 w-10 items-center justify-center rounded-full border text-base shadow-md ${darkMode
             ? "border-gray-700 bg-gray-800 text-yellow-300 shadow-black/20 hover:bg-gray-700"
             : "border-gray-300 bg-gray-200 text-gray-700 shadow-gray-400/40 hover:bg-gray-300"
-        }`}
+          }`}
       >
         {darkMode ? "☀" : "☾"}
       </button>
 
       <h1
-        className={`mb-1 text-3xl font-bold ${
-          darkMode ? "text-white" : "text-gray-950"
-        }`}
+        className={`mb-1 text-3xl font-bold ${darkMode ? "text-white" : "text-gray-950"
+          }`}
       >
         My Assignments
       </h1>
 
       <p
-        className={`mb-5 text-sm ${
-          darkMode ? "text-gray-400" : "text-gray-600"
-        }`}
+        className={`mb-5 text-sm ${darkMode ? "text-gray-400" : "text-gray-600"
+          }`}
       >
         Keep track of what you need to get done.
       </p>
 
-      <div className="mb-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="mb-6 grid grid-cols-2 gap-3 xl:grid-cols-4">
         <div
-          className={`rounded-2xl border p-4 shadow-lg ${
-            darkMode
+          className={`rounded-2xl border p-4 shadow-lg ${darkMode
               ? "border-gray-700 bg-gray-800 text-white shadow-black/25"
               : "border-gray-300 bg-gray-200 text-gray-900 shadow-gray-400/40"
-          }`}
+            }`}
         >
           <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
             Due Today
@@ -721,11 +703,10 @@ function Dashboard({
         </div>
 
         <div
-          className={`rounded-2xl border p-4 shadow-lg ${
-            darkMode
+          className={`rounded-2xl border p-4 shadow-lg ${darkMode
               ? "border-gray-700 bg-gray-800 text-white shadow-black/25"
               : "border-gray-300 bg-gray-200 text-gray-900 shadow-gray-400/40"
-          }`}
+            }`}
         >
           <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
             This Week
@@ -736,11 +717,10 @@ function Dashboard({
         </div>
 
         <div
-          className={`rounded-2xl border p-4 shadow-lg ${
-            darkMode
+          className={`rounded-2xl border p-4 shadow-lg ${darkMode
               ? "border-gray-700 bg-gray-800 text-white shadow-black/25"
               : "border-gray-300 bg-gray-200 text-gray-900 shadow-gray-400/40"
-          }`}
+            }`}
         >
           <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
             Workload
@@ -751,11 +731,10 @@ function Dashboard({
         </div>
 
         <div
-          className={`rounded-2xl border p-4 shadow-lg ${
-            darkMode
+          className={`rounded-2xl border p-4 shadow-lg ${darkMode
               ? "border-gray-700 bg-gray-800 text-white shadow-black/25"
               : "border-gray-300 bg-gray-200 text-gray-900 shadow-gray-400/40"
-          }`}
+            }`}
         >
           <p className="text-xs font-medium uppercase tracking-wide text-gray-500">
             Next Up
@@ -769,9 +748,8 @@ function Dashboard({
 
           {dashboardStats.nextUp && (
             <p
-              className={`mt-0.5 text-xs ${
-                darkMode ? "text-gray-400" : "text-gray-600"
-              }`}
+              className={`mt-0.5 text-xs ${darkMode ? "text-gray-400" : "text-gray-600"
+                }`}
             >
               {formatDueDate(dashboardStats.nextUp.dueDate)}
             </p>
@@ -781,46 +759,41 @@ function Dashboard({
 
       {priorityAssignment && (
         <div
-          className={`mb-6 rounded-2xl border p-5 shadow-lg ${
-            darkMode
+          className={`mb-6 rounded-2xl border p-5 shadow-lg ${darkMode
               ? "border-gray-700 bg-gray-800 shadow-black/25"
               : "border-gray-300 bg-gray-200 shadow-gray-400/40"
-          }`}
+            }`}
         >
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">
               <div className="mb-1 flex flex-wrap items-center gap-2">
                 <span
-                  className={`inline-flex items-center rounded-full border px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide ${
-                    darkMode
+                  className={`inline-flex items-center rounded-full border px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide ${darkMode
                       ? getPriorityInfo(priorityAssignment).darkBadge
                       : getPriorityInfo(priorityAssignment).badge
-                  }`}
+                    }`}
                 >
                   {getPriorityInfo(priorityAssignment).level} Priority
                 </span>
 
                 <span
-                  className={`text-xs font-medium ${
-                    darkMode ? "text-gray-500" : "text-gray-600"
-                  }`}
+                  className={`text-xs font-medium ${darkMode ? "text-gray-500" : "text-gray-600"
+                    }`}
                 >
                   Recommended next
                 </span>
               </div>
 
               <h2
-                className={`truncate text-xl font-bold ${
-                  darkMode ? "text-white" : "text-gray-950"
-                }`}
+                className={`truncate text-xl font-bold ${darkMode ? "text-white" : "text-gray-950"
+                  }`}
               >
                 {priorityAssignment.title}
               </h2>
 
               <p
-                className={`mt-1 text-sm ${
-                  darkMode ? "text-gray-400" : "text-gray-600"
-                }`}
+                className={`mt-1 text-sm ${darkMode ? "text-gray-400" : "text-gray-600"
+                  }`}
               >
                 {priorityAssignment.className} ·{" "}
                 {formatDueDate(priorityAssignment.dueDate)} ·{" "}
@@ -828,9 +801,8 @@ function Dashboard({
               </p>
 
               <p
-                className={`mt-2 text-sm font-medium ${
-                  darkMode ? "text-gray-300" : "text-gray-700"
-                }`}
+                className={`mt-2 text-sm font-medium ${darkMode ? "text-gray-300" : "text-gray-700"
+                  }`}
               >
                 {getPriorityInfo(priorityAssignment).message}
               </p>
@@ -848,11 +820,10 @@ function Dashboard({
                     block: "center",
                   });
               }}
-              className={`shrink-0 rounded-xl px-4 py-2.5 text-sm font-semibold ${
-                darkMode
+              className={`shrink-0 rounded-xl px-4 py-2.5 text-sm font-semibold ${darkMode
                   ? "bg-white text-gray-900 hover:bg-gray-200"
                   : "bg-gray-900 text-white hover:bg-gray-800"
-              }`}
+                }`}
             >
               Go to assignment
             </button>
@@ -862,16 +833,14 @@ function Dashboard({
 
       <button
         onClick={() => setShowAddForm((current) => !current)}
-        className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold shadow-lg ${
-          darkMode
+        className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold shadow-lg ${darkMode
             ? "border-transparent bg-white text-gray-900 shadow-black/20 hover:bg-gray-200"
             : "border-gray-300 bg-gray-200 text-gray-900 shadow-gray-400/40 hover:bg-gray-300"
-        }`}
+          }`}
       >
         <span
-          className={`text-lg transition-transform duration-300 ${
-            showAddForm ? "rotate-45" : ""
-          }`}
+          className={`text-lg transition-transform duration-300 ${showAddForm ? "rotate-45" : ""
+            }`}
         >
           +
         </span>
@@ -880,9 +849,8 @@ function Dashboard({
       </button>
 
       <div
-        className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${
-          showAddForm ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-        }`}
+        className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${showAddForm ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+          }`}
       >
         <div className="overflow-hidden">
           <AddAssignmentForm
@@ -895,11 +863,10 @@ function Dashboard({
       <div className="mt-6">
         <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div
-            className={`flex rounded-xl border p-1 ${
-              darkMode
+            className={`flex rounded-xl border p-1 ${darkMode
                 ? "border-gray-700 bg-gray-900"
                 : "border-gray-300 bg-gray-200"
-            }`}
+              }`}
           >
             {[
               ["active", "Active"],
@@ -914,15 +881,14 @@ function Dashboard({
                     value as "all" | "active" | "completed"
                   )
                 }
-                className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
-                  filter === value
+                className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${filter === value
                     ? darkMode
                       ? "bg-white text-gray-900"
                       : "bg-gray-900 text-white"
                     : darkMode
                       ? "text-gray-400 hover:bg-gray-800 hover:text-white"
                       : "text-gray-600 hover:bg-gray-300 hover:text-gray-900"
-                }`}
+                  }`}
               >
                 {label}
               </button>
@@ -931,9 +897,8 @@ function Dashboard({
 
           <div className="flex items-center gap-2">
             <span
-              className={`text-xs font-medium ${
-                darkMode ? "text-gray-500" : "text-gray-600"
-              }`}
+              className={`text-xs font-medium ${darkMode ? "text-gray-500" : "text-gray-600"
+                }`}
             >
               Sort:
             </span>
@@ -943,17 +908,16 @@ function Dashboard({
               onChange={(event) =>
                 setSortBy(
                   event.target.value as
-                    | "dueDate"
-                    | "difficulty"
-                    | "className"
-                    | "time"
+                  | "dueDate"
+                  | "difficulty"
+                  | "className"
+                  | "time"
                 )
               }
-              className={`rounded-xl border px-3 py-2 text-xs font-medium outline-none ${
-                darkMode
+              className={`rounded-xl border px-3 py-2 text-xs font-medium outline-none ${darkMode
                   ? "border-gray-700 bg-gray-800 text-gray-200"
                   : "border-gray-300 bg-gray-200 text-gray-800"
-              }`}
+                }`}
             >
               <option value="dueDate">Due Date</option>
               <option value="difficulty">Difficulty</option>
@@ -965,11 +929,10 @@ function Dashboard({
 
         {displayedAssignments.length === 0 ? (
           <div
-            className={`rounded-2xl border p-6 text-center text-sm ${
-              darkMode
+            className={`rounded-2xl border p-6 text-center text-sm ${darkMode
                 ? "border-gray-700 bg-gray-800 text-gray-400"
                 : "border-gray-300 bg-gray-200 text-gray-600 shadow-md shadow-gray-400/20"
-            }`}
+              }`}
           >
             {filter === "completed"
               ? "No completed assignments."
@@ -988,17 +951,15 @@ function Dashboard({
                 id={`assignment-${assignment.id}`}
               >
                 <div
-                  className={`relative mb-4 rounded-2xl border p-5 shadow-lg ${
-                    disintegratingIds.has(assignment.id) ? "snap-card" : ""
-                  } ${
-                    assignment.completed
+                  className={`relative mb-4 rounded-2xl border p-5 shadow-lg ${disintegratingIds.has(assignment.id) ? "snap-card" : ""
+                    } ${assignment.completed
                       ? darkMode
                         ? "border-gray-800 bg-gray-900 text-gray-500 shadow-black/10"
                         : "border-gray-300 bg-gray-200 text-gray-500 shadow-gray-400/20"
                       : darkMode
                         ? "border-gray-700 bg-gray-800 text-white shadow-black/25"
                         : "border-gray-300 bg-gray-200 text-gray-900 shadow-gray-400/40"
-                  }`}
+                    }`}
                 >
                   {disintegratingIds.has(assignment.id) && (
                     <div className="pointer-events-none absolute inset-0 z-20 overflow-visible rounded-2xl">
@@ -1032,13 +993,12 @@ function Dashboard({
                           ? `Mark ${assignment.title} incomplete`
                           : `Mark ${assignment.title} complete`
                       }
-                      className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 transition-colors duration-200 ${
-                        assignment.completed
+                      className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 transition-colors duration-200 ${assignment.completed
                           ? "border-green-500 bg-green-500 text-white"
                           : darkMode
                             ? "border-gray-500 bg-transparent hover:border-white"
                             : "border-gray-500 bg-transparent hover:border-gray-900"
-                      }`}
+                        }`}
                     >
                       {assignment.completed && (
                         <span className="text-xs font-bold">
@@ -1051,25 +1011,23 @@ function Dashboard({
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0">
                           <h2
-                            className={`text-xl font-bold ${
-                              assignment.completed
+                            className={`text-xl font-bold ${assignment.completed
                                 ? "text-gray-500 line-through"
                                 : darkMode
                                   ? "text-white"
                                   : "text-gray-950"
-                            }`}
+                              }`}
                           >
                             {assignment.title}
                           </h2>
 
                           <p
-                            className={`mt-0.5 text-base ${
-                              assignment.completed
+                            className={`mt-0.5 text-base ${assignment.completed
                                 ? "text-gray-500"
                                 : darkMode
                                   ? "text-gray-400"
                                   : "text-gray-600"
-                            }`}
+                              }`}
                           >
                             {assignment.className}
                           </p>
@@ -1087,22 +1045,20 @@ function Dashboard({
                               setEditingId(null);
                             }}
                             aria-label={`Actions for ${assignment.title}`}
-                            className={`flex h-9 w-9 items-center justify-center rounded-full text-xl font-bold leading-none ${
-                              darkMode
+                            className={`flex h-9 w-9 items-center justify-center rounded-full text-xl font-bold leading-none ${darkMode
                                 ? "text-gray-400 hover:bg-gray-700 hover:text-white"
                                 : "text-gray-500 hover:bg-gray-300 hover:text-gray-900"
-                            }`}
+                              }`}
                           >
                             ⋯
                           </button>
 
                           {isMenuOpen && (
                             <div
-                              className={`absolute right-0 top-10 z-30 w-44 overflow-hidden rounded-xl border shadow-xl ${
-                                darkMode
+                              className={`absolute right-0 top-10 z-30 w-44 overflow-hidden rounded-xl border shadow-xl ${darkMode
                                   ? "border-gray-700 bg-gray-900"
                                   : "border-gray-300 bg-white"
-                              }`}
+                                }`}
                             >
                               <button
                                 type="button"
@@ -1112,11 +1068,10 @@ function Dashboard({
                                   );
                                   setOpenMenuId(null);
                                 }}
-                                className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm font-medium ${
-                                  darkMode
+                                className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm font-medium ${darkMode
                                     ? "text-gray-200 hover:bg-gray-800"
                                     : "text-gray-800 hover:bg-gray-100"
-                                }`}
+                                  }`}
                               >
                                 <span>✏️</span>
                                 Edit
@@ -1130,11 +1085,10 @@ function Dashboard({
                                   );
                                   setOpenMenuId(null);
                                 }}
-                                className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm font-medium ${
-                                  darkMode
+                                className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm font-medium ${darkMode
                                     ? "text-gray-200 hover:bg-gray-800"
                                     : "text-gray-800 hover:bg-gray-100"
-                                }`}
+                                  }`}
                               >
                                 <span>📋</span>
                                 Duplicate
@@ -1150,11 +1104,10 @@ function Dashboard({
                                     completeWithSnap(assignment.id);
                                   }
                                 }}
-                                className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm font-medium ${
-                                  darkMode
+                                className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm font-medium ${darkMode
                                     ? "text-gray-200 hover:bg-gray-800"
                                     : "text-gray-800 hover:bg-gray-100"
-                                }`}
+                                  }`}
                               >
                                 <span>
                                   {assignment.completed
@@ -1174,11 +1127,10 @@ function Dashboard({
                                   );
                                   setOpenMenuId(null);
                                 }}
-                                className={`flex w-full items-center gap-3 border-t px-4 py-3 text-left text-sm font-medium ${
-                                  darkMode
+                                className={`flex w-full items-center gap-3 border-t px-4 py-3 text-left text-sm font-medium ${darkMode
                                     ? "border-gray-700 text-red-400 hover:bg-red-950/40"
                                     : "border-gray-200 text-red-600 hover:bg-red-50"
-                                }`}
+                                  }`}
                               >
                                 <span>🗑️</span>
                                 Delete
@@ -1198,11 +1150,10 @@ function Dashboard({
 
                         {!assignment.completed && (
                           <span
-                            className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold ${
-                              darkMode
+                            className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold ${darkMode
                                 ? getPriorityInfo(assignment).darkBadge
                                 : getPriorityInfo(assignment).badge
-                            }`}
+                              }`}
                           >
                             <span className="text-[8px]">●</span>
                             {getPriorityInfo(assignment).level}
@@ -1210,22 +1161,20 @@ function Dashboard({
                         )}
 
                         <span
-                          className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium ${
-                            darkMode
+                          className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium ${darkMode
                               ? "border-gray-700 bg-gray-900 text-gray-300"
                               : "border-gray-300 bg-gray-100 text-gray-700"
-                          }`}
+                            }`}
                         >
                           <span>📅</span>
                           {formatDueDate(assignment.dueDate)}
                         </span>
 
                         <span
-                          className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium ${
-                            darkMode
+                          className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium ${darkMode
                               ? "border-gray-700 bg-gray-900 text-gray-300"
                               : "border-gray-300 bg-gray-100 text-gray-700"
-                          }`}
+                            }`}
                         >
                           <span>⏱</span>
                           {assignment.estimatedMinutes} min
@@ -1297,9 +1246,9 @@ export default function Home() {
       currentAssignments.map((assignment) =>
         assignment.id === id
           ? {
-              ...assignment,
-              completed: !assignment.completed,
-            }
+            ...assignment,
+            completed: !assignment.completed,
+          }
           : assignment
       )
     );
@@ -1350,9 +1299,9 @@ export default function Home() {
       currentAssignments.map((assignment) =>
         assignment.id === id
           ? {
-              ...assignment,
-              ...updatedAssignment,
-            }
+            ...assignment,
+            ...updatedAssignment,
+          }
           : assignment
       )
     );
