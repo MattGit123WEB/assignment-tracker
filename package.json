@@ -9,9 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "16.3.5",
+=======
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.28.0",
+    "next": "16.3.0",
+>>>>>>> f33e4dd (Add authentication and dashboard structure)
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
